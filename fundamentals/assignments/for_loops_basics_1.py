@@ -7,20 +7,20 @@ Countdown by Fours - Print positive numbers starting at 2018, counting down by f
 Flexible Counter - Set three variables: lowNum, highNum, mult. Starting at lowNum and going through highNum, print only the integers that are a multiple of mult. For example, if lowNum=2, highNum=9, and mult=3, the loop should print 3, 6, 9 (on successive lines)
 '''
 # """ Print all numbers 0-150"""
-# def all_numbers():
-#     for x in range(0,151):
-#         print(x)
+def all_numbers():
+    for x in range(0,151):
+        print(x)
 
-# all_numbers()
+all_numbers()
 
 #multiples of 5 
-# def five_multiples(): 
-#     for x in range(5,1001):
-#         if x %5==0: 
-#             print(x)       
+def five_multiples(): 
+    for x in range(5,1001):
+        if x %5==0: 
+            print(x)       
 
-# #function call 
-# five_multiples()
+#function call 
+five_multiples()
 
 # Counting, the Dojo Way 
 def dojo_way(): 
@@ -34,30 +34,30 @@ def dojo_way():
 dojo_way()
 
 #Whoa. That Sucker's Huge add odd integers from 0 to 500,000
-# def huge_add(): 
-#     numbers = []
-#     for x in range(0,500000):
-#         if x%2==1:
-#             numbers.append(x)
-#     big_output = sum(numbers)
-#     print(big_output)
+def huge_add(): 
+    numbers = []
+    for x in range(0,500000):
+        if x%2==1:
+            numbers.append(x)
+    big_output = sum(numbers)
+    print(big_output)
 
 # huge_add()
 
 #Countdown by Fours: Print positive numbers starting at 2018, counting down by fours.
 
-# def count_fours(): 
-#     for x in range(2018,0,-4):
-#         print(x)
+def count_fours(): 
+    for x in range(2018,0,-4):
+        print(x)
 
-# count_fours()
+count_fours()
 
 #Flexible Counter - Set three variables: lowNum, highNum, mult.
 
-# lowNum=2
-# highNum=9
-# mult=3
+lowNum=2
+highNum=9
+mult=3
 
-# for x in range(lowNum,highNum+1): 
-#     if x%mult == 0:
-#         print(x)
+for x in range(lowNum,highNum+1): 
+    if x%mult == 0:
+        print(x)
