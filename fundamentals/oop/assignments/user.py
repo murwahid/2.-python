@@ -20,6 +20,7 @@ class User:
         print(f"{self.name} makes a transfer of {amount} to {other_user.name}")
         return self
 
+
 # #user 1
 x = User("Mindy") #create user
 
@@ -34,5 +35,8 @@ y.display_user_name().make_desposit(500).make_desposit(500).make_withdrawal(1000
 z = User("Jeff").display_user_name().make_desposit(500000).make_withdrawal(1000).make_withdrawal(1000).make_withdrawal(1000).display_user_balance()
 z.transfer_money(y,50000)
 
+#user 4 
+
+morty = User("Morty").display_user_name()
 
 
