@@ -4,37 +4,26 @@ class User:
         self.balance = 1000
     def make_desposit(self, amount): 
         self.balance += amount
+        return self
     def make_withdrawal(self,amount): #withdrawal function
         self.balance -= amount
+        return self
     def display_user_balance(self):  #function: display balance
         print("The Balance is: $ " + str(self.balance))
+        return self
     def display_user_name(self): #function display user name
         print(self.name)
+        return self
 
-#user 1
+# #user 1
 x = User("Mindy") #create user
 
 x.display_user_name() #display name
-x.make_desposit(1000)
-x.make_desposit(1000)
-x.make_desposit(1000)
-x.make_withdrawal(100) #function: withdrawal
-x.display_user_balance() #function: Display Balance
+x.make_desposit(1000).make_desposit(1000).make_desposit(1000).make_withdrawal(100) .display_user_balance() #function: Display Balance
 
 #user 2
 y = User("Rick")
-y.display_user_name()
-y.make_desposit(500)
-y.make_desposit(500)
-y.make_withdrawal(10000)
-y.make_withdrawal(1000)
-y.display_user_balance()
+y.display_user_name().make_desposit(500).make_desposit(500).make_withdrawal(10000).make_withdrawal(1000).display_user_balance()
 
 #user 3 1 d, 3w
-z = User("Jeff")
-z.display_user_name()
-z.make_desposit(500000)
-z.make_withdrawal(1000)
-z.make_withdrawal(1000)
-z.make_withdrawal(1000)
-z.display_user_balance()
+z = User("Jeff").display_user_name().make_desposit(500000).make_withdrawal(1000).make_withdrawal(1000).make_withdrawal(1000).display_user_balance()
