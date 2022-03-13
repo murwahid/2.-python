@@ -1,0 +1,20 @@
+* {
+padding:0;
+margin:0; 
+box-sizing:border-box;
+}
+
+/* UTILITY CLASSES */
+
+
+.container {
+    background-color: bisque;
+    min-width: 500px;
+}
+
+/* BOARD */
+
+table tr td {
+    height: 75px;
+    width: 75px;
+}
