@@ -12,6 +12,7 @@ def display():
     return render_template('blueBoxes.html')
 
 #PLAY W/ NUMBERS FUNCTION
+#AMAZING LOOP
 @app.route('/play/<int:num>/<string:boxColor>')
 def display_boxes(num,boxColor):
     times = int(num)
